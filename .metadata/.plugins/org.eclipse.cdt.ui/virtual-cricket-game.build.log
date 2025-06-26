@@ -1,0 +1,25 @@
+11:22:44 **** Rebuild of configuration Debug for project virtual-cricket-game ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\game.o" "..\\src\\game.cpp" 
+..\src\game.cpp: In member function 'void Game::toss()':
+..\src\game.cpp:214:16: warning: 'int usleep(useconds_t)' is deprecated [-Wdeprecated-declarations]
+  214 |  usleep(5000000);
+      |                ^
+In file included from ..\src\game.cpp:2:
+c:\mingw\include\unistd.h:100:29: note: declared here
+  100 | int __cdecl __MINGW_NOTHROW usleep( useconds_t )__MINGW_ATTRIB_DEPRECATED;
+      |                             ^~~~~~
+..\src\game.cpp:214:16: warning: 'int usleep(useconds_t)' is deprecated [-Wdeprecated-declarations]
+  214 |  usleep(5000000);
+      |                ^
+In file included from ..\src\game.cpp:2:
+c:\mingw\include\unistd.h:100:29: note: declared here
+  100 | int __cdecl __MINGW_NOTHROW usleep( useconds_t )__MINGW_ATTRIB_DEPRECATED;
+      |                             ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\virtual-cricket-game.o" "..\\src\\virtual-cricket-game.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\player.o" "..\\src\\player.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\team.o" "..\\src\\team.cpp" 
+g++ -o virtual-cricket-game.exe "src\\game.o" "src\\player.o" "src\\team.o" "src\\virtual-cricket-game.o" 
+
+11:22:47 Build Finished. 0 errors, 2 warnings. (took 3s.549ms)
+
